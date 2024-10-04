@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .chat-message {
+            margin: 10px 0;
+        }
+        .incoming {
+            text-align: left;
+        }
+        .outgoing {
+            text-align: right;
+        }
+        .incoming p {
+            background-color: #f1f1f1;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .outgoing p {
+            background-color: #007bff;
+            color: white;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Group Chat</h2>
+        <div id="chat-list" class="border p-3 mb-3" style="height: 300px; overflow-y: auto;"></div>
+        
+        <form id="chat-form">
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <input type="text" class="form-control" id="message" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="button" id="refresh-btn" class="btn btn-secondary ml-2">Refresh</button>
+        </form>
+        <a href="welcome.html" class="btn btn-secondary mt-3">Back</a>
+    </div>
+
+    <script src="JS\chatlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" class="form-control" id="login-email" placeholder="Name@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" class="form-control" id="login-password" placeholder="********" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <div id="login-error" class="text-danger mt-2"></div>
+        </form>
+    </div>
+
+    <script src="JS\login.js"></script>
+</body>
+</html>
